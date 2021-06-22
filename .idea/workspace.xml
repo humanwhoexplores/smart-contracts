@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="53032dd9-9e78-4a75-b6b8-2fdaab5b3a7a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inbox/compile.js" beforeDir="false" afterPath="$PROJECT_DIR$/inbox/compile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inbox/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/inbox/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/inbox/test/Inbox.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/inbox/test/Inbox.test.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -38,7 +39,7 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
-  <component name="RunManager" selected="Mocha.Inbox">
+  <component name="RunManager" selected="Mocha.inbox/test/Inbox.test.js">
     <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -84,7 +85,7 @@
       <method v="2" />
     </configuration>
     <configuration name="inbox/test/Inbox.test.js" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
-      <node-interpreter>project</node-interpreter>
+      <node-interpreter>/usr/local/bin/node</node-interpreter>
       <node-options />
       <mocha-package>$PROJECT_DIR$/inbox/node_modules/mocha</mocha-package>
       <working-directory>$PROJECT_DIR$/inbox</working-directory>
@@ -95,6 +96,11 @@
       <test-file>$PROJECT_DIR$/inbox/test/Inbox.test.js</test-file>
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Mocha.Inbox" />
+      <item itemvalue="Mocha.Inbox.checking if we have valid address of a contract" />
+      <item itemvalue="Mocha.inbox/test/Inbox.test.js" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Mocha.Inbox" />
@@ -112,7 +118,7 @@
       <option name="presentableId" value="Default" />
       <updated>1624257600526</updated>
       <workItem from="1624257601637" duration="941000" />
-      <workItem from="1624293281559" duration="6387000" />
+      <workItem from="1624293281559" duration="6711000" />
     </task>
     <servers />
   </component>
