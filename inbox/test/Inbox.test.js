@@ -7,6 +7,7 @@ const { interface, bytecode } = require('../compile')
 
 let accounts;
 let inbox;
+const INITIAL_MESSAGE =  'Inbox contract';
 
 beforeEach(async () => {
     // beforeEach runs before running each test
@@ -26,5 +27,10 @@ describe('Inbox' , () => {
     it('checking if we have valid address of a contract', () => {
         // if the contract has been deployed, it will have an address, this test checks that
         assert.ok(inbox.options.address);
+    });
+
+    it('has a default message', async ()=> {
+        const message = await inbox.methods.message().call();
+        assert.equal(message, INITIAL_MESSAGE);
     });
 });
