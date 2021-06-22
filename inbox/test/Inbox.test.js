@@ -22,4 +22,9 @@ describe('Inbox' , () => {
     it('deploys a contract', () => {
         console.log(accounts);
     });
+
+    it('checking if we have valid address of a contract', () => {
+        // if the contract has been deployed, it will have an address, this test checks that
+        assert.ok(inbox.options.address);
+    });
 });
