@@ -18,6 +18,7 @@ beforeEach(async () => {
         .deploy({data : bytecode, arguments: ['Inbox contract']})
         .send({from: accounts[0], gas: '1000000'})
 
+    console.log("the account from which i am deploying is " , accounts[0]);
     let balance = await web3.eth.getBalance(accounts[0]);
     console.log("The balance is ", balance);   
 });
@@ -27,14 +28,14 @@ describe('Inbox' , () => {
         console.log("All the accounts we got from Test Script are ", accounts);
     });
 
-    it('checking if we have valid address of a contract', () => {
-        // if the contract has been deployed, it will have an address, this test checks that
-        assert.ok(inbox.options.address);
-        console.log("The address of the contract is " , inbox.options.address);
-    });
+    // it('checking if we have valid address of a contract', () => {
+    //     // if the contract has been deployed, it will have an address, this test checks that
+    //     assert.ok(inbox.options.address);
+    //     console.log("The address of the contract is " , inbox.options.address);
+    // });
 
-    it('has a default message', async ()=> {
-        const message = await inbox.methods.message().call();
-        assert.equal(message, INITIAL_MESSAGE);
-    });
+    // it('has a default message', async ()=> {
+    //     const message = await inbox.methods.message().call();
+    //     assert.equal(message, INITIAL_MESSAGE);
+    // });
 });
