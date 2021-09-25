@@ -17,16 +17,20 @@ beforeEach(async () => {
     inbox = await new web3.eth.Contract(JSON.parse(interface))
         .deploy({data : bytecode, arguments: ['Inbox contract']})
         .send({from: accounts[0], gas: '1000000'})
+
+    let balance = await web3.eth.getBalance(accounts[0]);
+    console.log("The balance is ", balance);   
 });
 
 describe('Inbox' , () => {
     it('deploys a contract', () => {
-        console.log(accounts);
+        console.log("All the accounts we got from Test Script are ", accounts);
     });
 
     it('checking if we have valid address of a contract', () => {
         // if the contract has been deployed, it will have an address, this test checks that
         assert.ok(inbox.options.address);
+        console.log("The address of the contract is " , inbox.options.address);
     });
 
     it('has a default message', async ()=> {
