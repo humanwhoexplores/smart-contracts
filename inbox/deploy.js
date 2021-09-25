@@ -3,7 +3,7 @@ const Web3 = require("web3");
 const { interface, bytecode } = require("./compile");
 
 var mnemonic = 'scrap dish broccoli update lounge afraid arrest know renew leader sunset copy';
-var infura_provider_url = 'https://rinkeby.infura.io/v3/7985ca9520d8459b9e3ef03d4ecbe81c';
+var infura_provider_url = 'https://kovan.infura.io/v3/7985ca9520d8459b9e3ef03d4ecbe81c';
 
 const provider = new HDWalletProvider( mnemonic, infura_provider_url);
 
